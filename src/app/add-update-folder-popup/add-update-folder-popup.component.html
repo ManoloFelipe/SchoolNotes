@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ folder ? 'Actualizar Carpeta' : 'Crear Carpeta' }}
+    </ion-title>
+    <ion-buttons slot="end" >
+      <ion-button (click)="close()" shape="round" fill="outline">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  [fullscreen]="true" class="ion-padding">
+  <form (ngSubmit)="saveFolder()">
+    <ion-item>
+      <ion-label position="stacked">Nombre de Carpeta</ion-label>
+      <ion-input [(ngModel)]="folderName" name="folderName" required></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">
+      {{ folder ? 'Actualizar' : 'Crear' }}
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,33 @@
+{
+  "database": "schoolnotes.db",
+  "version": 1,
+  "encrypted": false,
+  "mode": "full",
+  "tables": [
+    {
+      "name": "folders",
+      "schema": [
+        { "column": "id", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+        { "column": "name", "value": "TEXT NOT NULL" },
+        { "column": "parent_id", "value": "INTEGER NULL" },
+        {
+          "foreignkey": "parent_id",
+          "value": "REFERENCES folders(id) ON DELETE CASCADE"
+        }
+      ]
+    },
+    {
+      "name": "notes",
+      "schema": [
+        { "column": "id", "value": "INTEGER PRIMARY KEY AUTOINCREMENT" },
+        { "column": "folder_id", "value": "INTEGER NOT NULL" },
+        { "column": "title", "value": "TEXT NOT NULL" },
+        { "column": "text", "value": "TEXT NOT NULL" },
+        {
+          "foreignkey": "folder_id",
+          "value": "REFERENCES folders(id) ON DELETE CASCADE"
+        }
+      ]
+    }
+  ]
+}

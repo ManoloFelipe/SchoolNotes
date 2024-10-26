@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ note ? 'Actualizar Nota' : 'Crear Nota' }}
+    </ion-title>
+    <ion-buttons slot="end" >
+      <ion-button (click)="close()" shape="round" fill="outline">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  [fullscreen]="true" class="ion-padding">
+  <form (ngSubmit)="saveNote()">
+    <ion-item>
+      <ion-label position="stacked">Titulo de Nota</ion-label>
+      <ion-input [(ngModel)]="noteTitle" name="noteTitle" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Texto</ion-label>
+      <ion-input [(ngModel)]="noteText" name="noteText" required></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">
+      {{ note ? 'Actualizar' : 'Crear' }}
+    </ion-button>
+  </form>
+</ion-content>

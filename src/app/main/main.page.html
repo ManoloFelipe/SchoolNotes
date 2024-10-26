@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cursos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button
+        (click)="presentAddFolderPopup()"
+        shape="round"
+        fill="outline"
+      >
+        <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card *ngFor="let folder of folders">
+    <ion-item lines="none">
+      <ion-label (click)="navigateToNotes(folder)" class="ion-text-wrap">
+        {{ folder.name }}
+      </ion-label>
+      <ion-button (click)="presentAddFolderPopup(folder)" fill="clear" size="large" slot="end">
+        <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="deleteFolder(folder)" color="danger" fill="clear" size="large" slot="end">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>
+
+

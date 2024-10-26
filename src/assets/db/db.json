@@ -14,6 +14,9 @@
           "foreignkey": "parent_id",
           "value": "REFERENCES folders(id) ON DELETE CASCADE"
         }
+      ],
+      "values":[
+        [1, "microeconomía", 0]
       ]
     },
     {
@@ -27,6 +30,39 @@
           "foreignkey": "folder_id",
           "value": "REFERENCES folders(id) ON DELETE CASCADE"
         }
+      ],
+      "values": [
+        [1, 1, "Oferta y Demanda", "La relación entre la cantidad de un bien que los productores están dispuestos a vender y la cantidad que los consumidores están dispuestos a comprar."],
+        [2, 1, "Elasticidad", "Medida de cómo la cantidad demandada o ofrecida de un bien responde a un cambio en el precio."],
+        [3, 1, "Monopolio", "Situación de mercado en la cual un solo proveedor domina la totalidad del mercado de un bien o servicio."],
+        [4, 1, "Competencia Perfecta", "Mercado en el cual hay muchos vendedores y compradores, todos los cuales son 'precio-aceptantes'."],
+        [5, 1, "Coste Marginal", "Incremento en el costo total que resulta de producir una unidad adicional de producto."],
+        [6, 1, "Beneficio Marginal", "Incremento en el beneficio total que resulta de vender una unidad adicional de producto."],
+        [7, 1, "Economía de Escala", "Reducción del costo por unidad de producción a medida que aumenta el volumen de producción."],
+        [8, 1, "Externalidades", "Costes o beneficios de una actividad económica que no se reflejan en el precio del bien o servicio."],
+        [9, 1, "Utilidad", "Medida de la satisfacción o beneficio que un consumidor obtiene de consumir un bien o servicio."],
+        [10, 1, "Equilibrio de Mercado", "Situación en la cual la cantidad demandada de un bien iguala la cantidad ofrecida."],
+        [11, 1, "Producto Interno Bruto (PIB)", "Valor total de todos los bienes y servicios finales producidos en un país durante un cierto período."],
+        [12, 1, "Inflación", "Incremento sostenido en el nivel general de precios de bienes y servicios en una economía durante un período."],
+        [13, 1, "Desempleo", "Situación en la cual una persona que está capacitada y desea trabajar no puede encontrar empleo."],
+        [14, 1, "Política Monetaria", "Estrategia usada por los gobiernos y bancos centrales para controlar la cantidad de dinero en circulación y las tasas de interés."],
+        [15, 1, "Política Fiscal", "Uso de ingresos gubernamentales y gastos para influir en la economía."],
+        [16, 1, "Costo de Oportunidad", "Valor de la mejor alternativa a la que se renuncia al tomar una decisión."],
+        [17, 1, "Curva de Indiferencia", "Representación gráfica de combinaciones de bienes que proporcionan al consumidor el mismo nivel de satisfacción."],
+        [18, 1, "Frontera de Posibilidades de Producción (FPP)", "Representación gráfica de las cantidades máximas de dos bienes que una economía puede producir dados los recursos y la tecnología disponible."],
+        [19, 1, "Ingreso Marginal", "Ingreso adicional obtenido por la venta de una unidad adicional de producto."],
+        [20, 1, "Ciclo Económico", "Fluctuaciones en la actividad económica de una economía durante un período de tiempo."],
+        [21, 1, "Teoría de Juegos", "Estudio de la toma de decisiones estratégicas entre individuos o grupos en situaciones de competencia y cooperación."],
+        [22, 1, "Mercado Laboral", "Mercado en el cual se intercambia trabajo por salario entre trabajadores y empleadores."],
+        [23, 1, "Déficit Fiscal", "Situación en la cual los gastos del gobierno superan sus ingresos."],
+        [24, 1, "Superávit Fiscal", "Situación en la cual los ingresos del gobierno superan sus gastos."],
+        [25, 1, "Balanza de Pagos", "Registro de todas las transacciones económicas realizadas entre los residentes de un país y el resto del mundo."],
+        [26, 1, "Tipo de Cambio", "Precio de una moneda en términos de otra moneda."],
+        [27, 1, "Aranceles", "Impuestos aplicados a la importación de bienes extranjeros."],
+        [28, 1, "Subsidios", "Ayudas económicas otorgadas por el gobierno para apoyar una actividad económica específica."],
+        [29, 1, "Mercado de Capitales", "Mercado en el cual se negocian instrumentos financieros a largo plazo, como acciones y bonos."],
+        [30, 1, "Microeconomía", "Rama de la economía que estudia el comportamiento de los individuos y las empresas en la toma de decisiones y la asignación de recursos."],
+        [31, 1, "Política Comercial", "Estrategias y medidas adoptadas por un gobierno para regular el comercio exterior de su país, incluyendo aranceles, subsidios, y acuerdos comerciales."]
       ]
     }
   ]
